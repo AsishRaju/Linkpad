@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "LinkPad",
+    "version": "1.0",
+    "description": "Add your mostly used links for better access",
+    "icons" :{
+        "128": "img/icon128.png",
+        "48": "img/icon48.png",
+        "16": "img/icon16.png"
+    },
+    "browser_action":{
+        "default_icon": "img/icon16.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": [
+        "./js/background.js","./js/jquery-3.5.1.min.js"
+      ]
+    },
+    "permissions":[
+        "storage"
+    ],
+    "commands": {
+        "_execute_browser_action": {
+          "suggested_key": {
+            "default": "Alt+L",
+            "linux": "Alt+L",
+            "windows": "Alt+L",
+            "mac": "Alt+L"
+          }
+        }
+      }
+}

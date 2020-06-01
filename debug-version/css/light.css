@@ -1,0 +1,17 @@
+body{
+    background-color: white !important;
+}
+.title{
+    color: var(--gray-dark);
+}
+
+.list-group-item-action:hover .link-title{
+    color: #4285F4 !important;
+    
+}
+
+.link-title{
+    color: black !important;
+    transition: all 300ms;
+    
+}

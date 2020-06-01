@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h2 class="title text-center mt-2">Linkpad</h2>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide align-items-center about">
+                <button type="button" class="btn btn-secondary btn-lg text-monospace mt-5 mb-5 darkbtn" tabindex="-1"></button>
+                <br>
+                <a href="https://github.com/AsishRaju?tab=repositories" target="_blank" class="title dev-link"
+                    style="font-size: 30px;" tabindex="-1">Know the 👨🏻‍💻!</a>
+                <br>
+                <br>
+                <a href="https://github.com/AsishRaju/Linkpad" target="_blank"
+                    class="btn btn-primary btn-sm active text-monospace font-weight-bold" role="button"
+                    aria-pressed="true" class="" tabindex="-1">🤝🏻 Contribute to Linkpad</a>
+                <div class="text-center">
+                    <p class="text-monospace  font-weight-bold other-text" style="margin-top: 5rem;" tabindex="-1">Made in 🇮🇳 with
+                        💛</p>
+                </div>
+            </div>
+        </div>
+        <!-- swiper pagination -->
+        <div class="swiper-pagination">
+
+        </div>
+    </div>
+    <div class="bottom-control text-center" style="background-color: var(--primary);">
+        <div class="container" style="padding: 0px !important;">
+            <div class="row" style="margin: 0px !important;">
+                <div class="col" style="padding: 0px !important;">
+                    <button class="btn btn-primary btn-block text-monospace font-weight-bold px-1" data-toggle="modal"
+                        style="font-size: 20px;" data-target="#addLinkModal" id="addLinkModalBtn"tabindex="-1">Add Link 🌐</button>
+                </div>
+                <div class="col" style="padding: 0px !important;">
+                    <button class="btn btn-primary btn-block text-monospace font-weight-bold px-1"
+                        style="font-size: 20px;" data-toggle="modal" data-target="#groupSettingModal" id="groupSettingModalBtn" tabindex="-1">Group's ⚙️</button></div>
+            </div>
+        </div>
+        <!-- Add Link Modal -->
+        <div class="modal fade" id="addLinkModal"  role="dialog" aria-labelledby="addLinkModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addLinkModalLabel">Add Link 🌐</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="url" placeholder="Paste Url">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="urltext" placeholder="URL for?">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close ❌</button>
+                        <button type="button" class="btn btn-primary" id="addLinkBtn">Add ✔</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Group Setting Modal -->
+        <div class="modal fade" id="groupSettingModal"  role="dialog" aria-labelledby="groupSettingModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="groupSettingModalLabel">Add/Remove Group's ⚙️</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="New group name?" id="addGroupInput">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-outline-success" type="button" id="addGroupBtn">Add Group</button>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-outline-danger" type="button" id="removeGroupBtn">Remove Current Group</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/darkmode.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/toast.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
