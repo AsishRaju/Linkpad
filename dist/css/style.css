@@ -1,72 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #3a3a3a; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: whitesmoke; 
-  }
+  width: 5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3a3a3a;
+}
 
-body
-{
-    min-width: 350px;
-    min-height: 420px;
-    border: 3px solid #4285F4;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+body {
+  min-width: 350px;
+  min-height: 420px;
+  border: 3px solid #4285f4;
 }
 
 .swiper-container {
-    width: 350px;
-    height: 400px;
-    text-align: center;
+  width: 350px;
+  height: 400px;
+  text-align: center;
 }
 
-.about{
-    overflow-y: hidden !important;
-    height: 365px;
+.about {
+  overflow-y: hidden !important;
+  height: 365px;
 }
 
-.swiper-button-prev,.swiper-button-next{
-    height: 10px;
-    width: 10px;
+.swiper-button-prev,
+.swiper-button-next {
+  height: 10px;
+  width: 10px;
 }
-.swiper-slide
-{
-    overflow-y: auto;
-    height: 360px;
+.swiper-slide {
+  overflow-y: auto;
+  height: 360px;
 }
-.title{
-    font-family: 'Oleo Script Swash Caps', cursive;
-}
-
-.link-title{
-    font-family: var(--font-family-monospace);
-    font-size: 25px;
+.title {
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 
-
-.dev-link:hover{
-    text-decoration: none;
-    color: #4285F4;
+.link-title {
+  font-family: var(--font-family-monospace);
+  font-size: 25px;
 }
 
-.link-item{
-    
-    border-radius: 5px;
+.dev-link:hover {
+  text-decoration: none;
+  color: #4285f4;
 }
-.edit-btn ,.delete-btn{
-    height: 20px; 
-    width: 20px;
+
+.link-item {
+  border-radius: 5px;
+}
+.edit-btn,
+.delete-btn {
+  height: 20px;
+  width: 20px;
 }

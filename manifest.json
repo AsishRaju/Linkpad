@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "LinkPad",
-    "version": "1.0",
+    "version": "1.0.2",
     "description": "Better place to manage your bookmarks",
     "icons" :{
         "128": "img/icon128.png",

@@ -11,41 +11,39 @@
 
 ***********************************************/
 
-var allLinkDataDefault = { //--> Deafult Object where allLinkData will be stored
-    0: {
-      "title": "Social Media",
-      "links": [
-  
-      ]
-    }
-  }
+var allLinkDataDefault = {
+  //--> Deafult Object where allLinkData will be stored
+  0: {
+    title: "Social Media",
+    links: [],
+  },
+};
 
 chrome.runtime.onMessage.addListener(callback); //--> Chrome Message Listener init
 function callback(obj, sender, sendResponse) {
-    if (obj) {
-        if (obj.method == 'getContent') {   //--> when popup ask for savedData
-            getContent(sendResponse);
-            
-        } else if (obj.method == 'saveData') { //--> when popup ask's to save data
-            chrome.storage.sync.clear()
-            chrome.storage.sync.set({'linkpad': obj.data}, function() {
-                    sendResponse('New Data is set ✔');
-            });
-        }
+  if (obj) {
+    if (obj.method == "getContent") {
+      //--> when popup ask for savedData
+      getContent(sendResponse);
+    } else if (obj.method == "saveData") {
+      //--> when popup ask's to save data
+      chrome.storage.sync.clear();
+      chrome.storage.sync.set({ linkpad: obj.data }, function () {
+        sendResponse("New Data is set ✔");
+      });
     }
-    return true; 
+  }
+  return true;
 }
 
-
-function getContent(sendResponse) { //--> response callBack 
-    chrome.storage.sync.get(['linkpad'], function(result) { //--> asking chrome to return the saved data
-        if(jQuery.isEmptyObject(result))
-        {
-            sendResponse(allLinkDataDefault)
-        }
-        else
-        {
-            sendResponse(result.linkpad)
-        }
-      });
+function getContent(sendResponse) {
+  //--> response callBack
+  chrome.storage.sync.get(["linkpad"], function (result) {
+    //--> asking chrome to return the saved data
+    if (jQuery.isEmptyObject(result)) {
+      sendResponse(allLinkDataDefault);
+    } else {
+      sendResponse(result.linkpad);
+    }
+  });
 }
