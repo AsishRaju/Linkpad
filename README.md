@@ -9,6 +9,9 @@ Do Rate ⭐ and send in Reviews 😄
 ## Overview 👀
 <img src="img/showcase1.png" style="border-radius:8px">
 
+
+[See Demo Here]
+
 - Categorise your links with groups 📂 
 - Light weight **<140Kb** 😱
 - Dark Mode 🌓 
@@ -55,3 +58,5 @@ Do Rate ⭐ and send in Reviews 😄
 [Gmail]: <mailto:vashish888@gmail.com>
 [LinkedIn]: <https://www.linkedin.com/in/asish-raju-7a0b90192>
 [Twitter]: <https://twitter.com/vashish888>
+[Add to your chrome]: <https://chrome.google.com/webstore/detail/linkpad/nomgglnafmlbgjfcfhgpelfcpjlbkkpk>
+[See Demo Here]:<https://youtu.be/GR6RNwUi49k>
