@@ -10,7 +10,7 @@ Do Rate ⭐ and send in Reviews 😄
 <img src="img/showcase1.png" style="border-radius:8px">
 
 
-[See Demo Here]
+- [See Demo Here]
 
 - Categorise your links with groups 📂 
 - Light weight **<140Kb** 😱
